@@ -1,65 +1,152 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TWONGGANG FEST 2025</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TWONGGANG FEST & E-SPORT 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0e0e0e;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #2c003e, #000000);
+    }
+
+    .logo {
+      width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px auto;
+      animation: fadeZoomGlow 1.5s ease-out forwards, pulseGlow 3s ease-in-out infinite;
+      opacity: 0;
+    }
+
+    @keyframes fadeZoomGlow {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+        filter: drop-shadow(0 0 0px transparent);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+        filter: drop-shadow(0 0 15px #ffea00) drop-shadow(0 0 25px #9b59b6);
+      }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% {
+        filter: drop-shadow(0 0 15px #ffea00) drop-shadow(0 0 25px #9b59b6);
+      }
+      50% {
+        filter: drop-shadow(0 0 25px #ffea00) drop-shadow(0 0 35px #9b59b6);
+      }
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #ffea00;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #d4c000;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    ul ul {
+      list-style-type: circle;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="logo-container">
-      <img src="assets/logo.png" alt="Logo Twonggang Fest" class="logo" />
-    </div>
+    <img src="logo.png" alt="Logo Twonggang Fest" class="logo">
     <h1>TWONGGANG FEST & E-SPORT 2025</h1>
-    <p class="date">12–14 September 2025</p>
+    <p>12 - 14 September 2025 | SMAN 2 Gunung Talang</p>
+    <a href="#daftar" class="btn">Daftar Sekarang</a>
   </header>
 
-  <main>
-    <section class="description">
-      <h2>Deskripsi Acara</h2>
-      <p>
-        SMAN 2 Gunung Talang mempersembahkan TWONGGANG FEST & E-SPORT 2025, sebuah festival tahunan yang akan diselenggarakan pada tanggal 12–14 September 2025. Kegiatan ini menjadi wadah bagi siswa-siswi untuk menyalurkan bakat, kreativitas, dan semangat berkompetisi dalam berbagai bidang yang mencerminkan kecerdasan spiritual, emosional, dan intelektual.
-      </p>
-    </section>
+  <section id="tentang">
+    <h2>Tentang Festival</h2>
+    <p>SMAN 2 Gunung Talang mempersembahkan <strong>TWONGGANG FEST & E-SPORT 2025</strong>, sebuah festival tahunan yang akan diselenggarakan pada tanggal <strong>12–14 September 2025</strong>. Kegiatan ini menjadi wadah bagi siswa-siswi untuk menyalurkan bakat, kreativitas, dan semangat berkompetisi dalam berbagai bidang yang mencerminkan kecerdasan spiritual, emosional, dan intelektual.</p>
 
-    <section class="lomba">
-      <h2>Rangkaian Perlombaan</h2>
-      <ul>
-        <li><strong>Musabaqah Syarhil Qur’an (MSQ):</strong> memperdalam nilai-nilai keislaman dan melatih kemampuan menyampaikan pesan moral secara lisan.</li>
-        <li><strong>Cabang Seni:</strong> Vokal Solo dan Tari Kreasi sebagai bentuk ekspresi kreativitas dan pelestarian budaya.</li>
-        <li><strong>E-Sport Mobile Legends:</strong> melatih kerja sama tim, strategi, dan sportivitas di dunia digital.</li>
-      </ul>
-      <p>
-        Melalui festival ini, diharapkan siswa tidak hanya menunjukkan kemampuan terbaik mereka, tetapi juga belajar tentang nilai-nilai kebersamaan, tanggung jawab, dan semangat positif dalam berkompetisi.
-      </p>
-    </section>
+    <p>Melalui festival ini, diharapkan siswa tidak hanya menunjukkan kemampuan terbaik mereka, tetapi juga belajar tentang nilai-nilai kebersamaan, tanggung jawab, dan semangat positif dalam berkompetisi.</p>
+  </section>
 
-    <section class="contact">
-      <h2>Kontak & Sosial Media</h2>
-      <p><strong>Alamat:</strong> Jl. Tabek Rangguang, Koto Gaek, Guguk, Kec. Gunung Talang, Kabupaten Solok, Sumatera Barat</p>
-      <p><strong>Email:</strong> <a href="mailto:smanduguntal02@gmail.com">smanduguntal02@gmail.com</a></p>
-      <div class="social">
-        <a href="https://instagram.com/twonggang_fest" target="_blank">
-          <img src="assets/instagram.svg" alt="Instagram Icon" /> @twonggang_fest
-        </a>
-        <a href="https://instagram.com/sman2guntal" target="_blank">
-          <img src="assets/instagram.svg" alt="Instagram Icon" /> @sman2guntal
-        </a>
-      </div>
-    </section>
-  </main>
+  <section id="jadwal">
+    <h2>Rangkaian Perlombaan</h2>
+    <ul>
+      <li><strong>Musabaqah Syarhil Qur’an (MSQ):</strong> Ajang untuk memperdalam nilai-nilai keislaman dan melatih kemampuan menyampaikan pesan moral secara lisan.</li>
+      <li><strong>Cabang Seni:</strong>
+        <ul>
+          <li>Vokal Solo – sebagai bentuk ekspresi kreativitas siswa dalam bermusik.</li>
+          <li>Tari Kreasi – upaya pelestarian budaya melalui gerak dan seni tari.</li>
+        </ul>
+      </li>
+      <li><strong>E-Sport Mobile Legends: Bang-Bang:</strong> Mengembangkan kerja sama tim, strategi, dan sportivitas dalam dunia digital.</li>
+    </ul>
+  </section>
+
+  <section id="daftar">
+    <h2>Formulir Pendaftaran</h2>
+    <p>Formulir pendaftaran dapat diakses melalui tautan berikut:</p>
+    <a href="#" class="btn">Link Formulir (akan ditambahkan)</a>
+  </section>
 </body>
 </html>
 
-<section id="galeri" class="gallery-section">
-  <h2>Galeri Kegiatan</h2>
-  <div class="gallery-container">
-    <img src="assets/images/gallery/kegiatan1.jpg" alt="Kegiatan 1">
-    <img src="assets/images/gallery/kegiatan2.jpg" alt="Kegiatan 2">
-    <img src="assets/images/gallery/kegiatan3.jpg" alt="Kegiatan 3">
-    <img src="assets/images/gallery/kegiatan4.jpg" alt="Kegiatan 4">
-  </div>
-</section>
+<footer>
+  <section style="padding: 40px 20px; text-align: center;">
+    <p><strong>Alamat:</strong> Jl. Tabek Rangguang, Koto Gaek, Guguk, Kec. Gunung Talang, Kabupaten Solok, Sumatera Barat.</p>
 
-<img src="logo.png" alt="Logo Twonggang Fest" class="logo">
+    <div class="socials" style="margin-top: 20px; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+      <a href="mailto:smanduguntal02@gmail.com" style="color: #fff; text-decoration: none; display: flex; align-items: center;">
+        <img src="logo gmail.svg" alt="Email" width="24" style="margin-right: 8px;">
+        smanduguntal02@gmail.com
+      </a>
+      <a href="https://instagram.com/twonggang_fest" target="_blank" style="color: #fff; text-decoration: none; display: flex; align-items: center;">
+        <img src="logo instagram.svg" alt="Instagram" width="24" style="margin-right: 8px;">
+        @twonggang_fest
+      </a>
+      <a href="https://instagram.com/sman2guntal" target="_blank" style="color: #fff; text-decoration: none; display: flex; align-items: center;">
+        <img src="logo instagram.svg" alt="Instagram" width="24" style="margin-right: 8px;">
+        @sman2guntal
+      </a>
+    </div>
+  </section>
+</footer>
+</html>
