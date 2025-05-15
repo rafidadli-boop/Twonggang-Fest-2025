@@ -1,47 +1,67 @@
+/* styles.css */
 
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TWONGGANG FEST 2025</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="hero">
-            <img src="logo.png" alt="Logo Twonggang Fest" class="logo">
-            <h1>TWONGGANG FEST & E-SPORT 2025</h1>
-            <p>12–14 September 2025 | SMAN 2 Gunung Talang</p>
-            <a href="#daftar" class="cta-button">Daftar Sekarang</a>
-        </div>
-    </header>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-image: url('assets/images/twonggang-fest.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-    <section id="tentang">
-        <h2>Tentang Festival</h2>
-        <p>
-            SMAN 2 Gunung Talang mempersembahkan TWONGGANG FEST & E-SPORT 2025, 
-            ajang tahunan yang mengembangkan potensi, kreativitas, dan semangat kompetisi.
-        </p>
-    </section>
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
 
-    <section id="lomba">
-        <h2>Cabang Lomba</h2>
-        <ul>
-            <li>Musabaqah Syarhil Qur’an (MSQ)</li>
-            <li>Vokal Solo & Tari Kreasi</li>
-            <li>E-Sport Mobile Legends: Bang-Bang</li>
-        </ul>
-    </section>
+.button {
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
 
-    <section id="daftar">
-        <h2>Pendaftaran</h2>
-        <p>Info pendaftaran akan diumumkan melalui akun resmi sekolah dan media sosial.</p>
-    </section>
+.button:hover {
+  background-color: #e65c00;
+}
 
-    <footer>
-        <p>&copy; 2025 SMAN 2 Gunung Talang. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+nav {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+<div class="gallery">
+  <img src="assets/images/gambar1.jpeg" alt="Foto 1">
+  <img src="assets/images/gambar2.jpeg" alt="Foto 2">
+  <img src="assets/images/gambar3.jpeg" alt="Foto 3">
+  <img src="assets/images/gambar4.jpeg" alt="Foto 4">
+  <img src="assets/images/gambar5.jpeg" alt="Foto 5">
+</div>
