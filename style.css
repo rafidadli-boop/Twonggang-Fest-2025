@@ -1,36 +1,89 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Twonggang Fest</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <nav>
-    <a href="#tentang">Tentang</a>
-    <a href="#galeri">Galeri</a>
-    <a href="#daftar">Daftar</a>
-  </nav>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #1a1a2e, #16213e);
+  color: #fff;
+  line-height: 1.6;
+}
 
-  <div class="container" id="tentang">
-    <h1>Twonggang Fest 2025</h1>
-    <p>Rasakan kemeriahan festival budaya paling spektakuler tahun ini! Twonggang Fest menghadirkan pertunjukan seni tradisional, modern, kuliner khas, dan berbagai kegiatan menarik lainnya.</p>
-    <a href="#daftar" class="button">Daftar Sekarang</a>
-  </div>
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
 
-  <div class="gallery" id="galeri">
-    <img src="assets/images/gambar1.jpeg" alt="Foto 1">
-    <img src="assets/images/gambar2.jpeg" alt="Foto 2">
-    <img src="assets/images/gambar3.jpeg" alt="Foto 3">
-    <img src="assets/images/gambar4.jpeg" alt="Foto 4">
-    <img src="assets/images/gambar5.jpeg" alt="Foto 5">
-  </div>
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
-  <div class="container" id="daftar">
-    <h2>Daftar Sekarang</h2>
-    <p>Jangan lewatkan kesempatan untuk menjadi bagian dari Twonggang Fest 2025. Klik tombol di bawah untuk mendaftar.</p>
-    <a href="https://forms.gle/form-pendaftaran" target="_blank" class="button">Formulir Pendaftaran</a>
-  </div>
-</body>
-</html>
+.logo {
+  width: 150px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 5px #ffcc00) drop-shadow(0 0 10px #9900ff);
+  }
+  to {
+    filter: drop-shadow(0 0 15px #ffcc00) drop-shadow(0 0 30px #9900ff);
+  }
+}
+
+.date {
+  font-size: 18px;
+  color: #ffd700;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1, h2 {
+  color: #ffd700;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.contact a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.social a:hover {
+  transform: scale(1.05);
+}
+
+.social img {
+  width: 24px;
+  height: 24px;
+}
