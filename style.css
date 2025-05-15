@@ -1,59 +1,36 @@
-/* styles.css */
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twonggang Fest</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#daftar">Daftar</a>
+  </nav>
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: white;
-  background-image: url('assets/images/twonggang-fest.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+  <div class="container" id="tentang">
+    <h1>Twonggang Fest 2025</h1>
+    <p>Rasakan kemeriahan festival budaya paling spektakuler tahun ini! Twonggang Fest menghadirkan pertunjukan seni tradisional, modern, kuliner khas, dan berbagai kegiatan menarik lainnya.</p>
+    <a href="#daftar" class="button">Daftar Sekarang</a>
+  </div>
 
-.container {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 40px;
-  border-radius: 10px;
-  max-width: 600px;
-  margin-bottom: 20px;
-}
+  <div class="gallery" id="galeri">
+    <img src="assets/images/gambar1.jpeg" alt="Foto 1">
+    <img src="assets/images/gambar2.jpeg" alt="Foto 2">
+    <img src="assets/images/gambar3.jpeg" alt="Foto 3">
+    <img src="assets/images/gambar4.jpeg" alt="Foto 4">
+    <img src="assets/images/gambar5.jpeg" alt="Foto 5">
+  </div>
 
-.button {
-  background-color: #ff6600;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  text-decoration: none;
-}
-
-.button:hover {
-  background-color: #e65c00;
-}
-
-nav {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
+  <div class="container" id="daftar">
+    <h2>Daftar Sekarang</h2>
+    <p>Jangan lewatkan kesempatan untuk menjadi bagian dari Twonggang Fest 2025. Klik tombol di bawah untuk mendaftar.</p>
+    <a href="https://forms.gle/form-pendaftaran" target="_blank" class="button">Formulir Pendaftaran</a>
+  </div>
+</body>
+</html>
